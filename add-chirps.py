@@ -257,7 +257,7 @@ def get_file_sample_count(args, audio_params):
 
 def process_file(args, audio_params, file_idx, file_sample_count, progress_queue):
     audio_out_file_path = pathlib.Path(args.audio_in_path).with_suffix(
-        f".{file_idx: 03d}.chirp.mp3"
+        f".{file_idx:03d}.chirp.mp3"
     )
 
     mp3_encoder = create_mp3_encoder(args, audio_params)
